@@ -9,6 +9,18 @@ SELECT Attrition, COUNT(*) AS total_employees
 FROM employee_attrition
 GROUP BY Attrition;
 
+| Attrition | Total Employees |
+|-----------|-----------------|
+| No        | 1233            |
+| Yes       | 237             |
+
+**Insight:**
+> Out of a total of 1,470 employees, only **237 have left** the organization, while **1,233 have stayed**.
+> - This implies an **attrition rate of ~16.1%**, which is moderate.
+> - Continuous monitoring is essential to identify **patterns behind attrition** and address potential retention challenges.
+> - Focused retention strategies may help reduce this attrition rate further.
+
+
 # 2. Attrition by Department
 -- Business Question:
 --     Which departments experience the highest attrition rates?
